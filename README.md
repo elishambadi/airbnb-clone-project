@@ -11,6 +11,54 @@ The Airbnb Clone Project is a comprehensive, real-world application designed to 
 6. Jenkins - CI/CD automation
 7. Github - version control
 
+## Database Design
+#### Users
+-id (PK)
+-name
+-email
+-password_hash
+-user_type (e.g., "host" or "guest")
+
+#### Properties
+-id (PK)
+-user_id (Foreign key → Users)
+-title
+-description
+-location
+-price_per_night
+
+#### Bookings
+-id (PK)
+-property_id (Foreign key → Properties)
+-user_id (Foreign key → Users)
+-start_date
+-end_date
+-total_price
+
+#### Reviews
+-id (PK)
+-property_id (Foreign key → Properties)
+-user_id (Foreign key → Users)
+-rating (1-5 stars)
+-comment
+
+#### Payments
+-id (PK)
+-booking_id (Foreign key → Bookings)
+-payment_date
+-amount
+-payment_status (e.g., "pending", "completed", "failed")
+
+#### Relationships:
+- A User can be a host (who owns properties) or a guest (who books properties).
+- A User can create multiple Properties (host role).
+- A User can make multiple Bookings (guest role).
+- A Property can have many Bookings.
+- A Property can have many Reviews.
+- A Booking must be linked to one Property and one User (guest).
+- A Review is made by a User for a Property.
+- A Payment is linked to a Booking and records the transaction.
+
 ## Project setup
 
 ## Team Roles
