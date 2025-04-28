@@ -81,6 +81,29 @@ Implements authentication, authorization, rate-limiting and data validation meas
 ###  CI/CD Pipeline
 Automates the testing and deployment process using tools like Jenkins and Docker. Ensures faster development cycles and reliable production releases.
 
+##  API Security
+Protecting the API endpoints from unauthorized access, abuse and overuse. This could come in the form of DDOS attacks, attempts at unauthorized access and excessive pinging. 
+
+### Measures to use:
+#### Registration & Token Authentication
+API Registration will be integrated for anyone seeking access to the API. Tokens will allow us to manage access using features like token issuance, token expiry and revoking tokens. This will ensure only identified users get access to the system.
+
+### Authorization
+Using the API registration, user types (type: api_user) will be checked to ensure only the authorized user gets access to the API.
+
+## Rate limiting
+Sentry ensures each endpoint is monitored and rate limiting is enforced depending on IP address and requests per given timeframe. This ensures no one client can abuse or overuse API resources.
+
+## CI/CD Pipeline
+CI/CD = Continuous Integration (of new code into existing codebase) / Continuous Deployment (build and release of new code)
+A CI/CD pipeline is important to ensure continuous improvements on the application in a reliable way.
+### Tools used:
+
+#### Git
+Running tests and using Git for VCS are used to ensure there is continuous integration of code using pull requests, while deployment is done by building and pushing code to the application server using tools like npm and go build to build and SSH to push the code.
+
+#### Jenkins
+Jenkins is used to automate this process by having Jenkinsfiles with stages. This leads to a faster CI/CD process as jenkins runs the tests, builds the application and deploys all on it's own.
 
 
 ## Team Roles
