@@ -91,7 +91,7 @@ API Registration will be integrated for anyone seeking access to the API. Tokens
 #### Authorization
 Using the API registration, user types (type: api_user) will be checked to ensure only the authorized user gets access to the API.
 
-## Rate limiting
+#### Rate limiting
 Sentry ensures each endpoint is monitored and rate limiting is enforced depending on IP address and requests per given timeframe. This ensures no one client can abuse or overuse API resources.
 
 ## CI/CD Pipeline
@@ -107,9 +107,9 @@ Jenkins is used to automate this process by having Jenkinsfiles with stages. Thi
 
 
 ## Team Roles
-`Front-End Developer` - Ensure the user interface and user experience are aligned to customer and business goals. Links UI with backend services.
-`Back-End Developer` - Ensure data is received, stored & processed in line with business logic, as well as availing the data for linking with the UI in correct formats.
-`Software Architect & Product Maneger` - Designs the high-level architecture of the software and manages the implementation process as well the implementors involved. In charge of product and team management.
+1. `Front-End Developer` - Ensure the user interface and user experience are aligned to customer and business goals. Links UI with backend services.
+2. `Back-End Developer` - Ensure data is received, stored & processed in line with business logic, as well as availing the data for linking with the UI in correct formats.
+3. `Software Architect & Product Maneger` - Designs the high-level architecture of the software and manages the implementation process as well the implementors involved. In charge of product and team management.
 
 
 ## Info
