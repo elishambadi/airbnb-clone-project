@@ -2,13 +2,14 @@
 
 The Airbnb Clone Project is a comprehensive, real-world application designed to simulate the development of a robust booking platform like Airbnb. It involves a deep dive into full-stack development, focusing on backend systems, database design, API development, and application security. This project enables learners to understand complex architectures, workflows, and collaborative team dynamics while building a scalable web application.
 
-## Stack
-1. Python (Django)
-2. PostgreSQL
-3. Docker
-4. Kubernetes
-5. Sentry
-6. Datadog
+## Technology Stack
+1. Python (Django) - For full-stack web dev
+2. PostgreSQL - strongly relational DB
+3. Docker - containerization
+4. Kubernetes - container orchestration
+5. Sentry - app monitoring
+6. Jenkins - CI/CD automation
+7. Github - version control
 
 ## Project setup
 
