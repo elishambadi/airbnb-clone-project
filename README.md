@@ -13,41 +13,41 @@ The Airbnb Clone Project is a comprehensive, real-world application designed to 
 
 ## Database Design
 #### Users
--id (PK)
--name
--email
--password_hash
--user_type (e.g., "host" or "guest")
+- id (PK)
+- name
+- email
+- password_hash
+- user_type (e.g., "host" or "guest")
 
 #### Properties
--id (PK)
--user_id (Foreign key → Users)
--title
--description
--location
--price_per_night
+- id (PK)
+- user_id (Foreign key → Users)
+- title
+- description
+- location
+- price_per_night
 
 #### Bookings
--id (PK)
--property_id (Foreign key → Properties)
--user_id (Foreign key → Users)
--start_date
--end_date
--total_price
+- id (PK)
+- property_id (Foreign key → Properties)
+- user_id (Foreign key → Users)
+- start_date
+- end_date
+- total_price
 
 #### Reviews
--id (PK)
--property_id (Foreign key → Properties)
--user_id (Foreign key → Users)
--rating (1-5 stars)
--comment
+- id (PK)
+- property_id (Foreign key → Properties)
+- user_id (Foreign key → Users)
+- rating (1-5 stars)
+- comment
 
 #### Payments
--id (PK)
--booking_id (Foreign key → Bookings)
--payment_date
--amount
--payment_status (e.g., "pending", "completed", "failed")
+- id (PK)
+- booking_id (Foreign key → Bookings)
+- payment_date
+- amount
+- payment_status (e.g., "pending", "completed", "failed")
 
 #### Relationships:
 - A User can be a host (who owns properties) or a guest (who books properties).
