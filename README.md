@@ -59,7 +59,29 @@ The Airbnb Clone Project is a comprehensive, real-world application designed to 
 - A Review is made by a User for a Property.
 - A Payment is linked to a Booking and records the transaction.
 
-## Project setup
+## Feature Breakdown
+### User Management
+Handles user registration, login, and profile management. Supports different user roles (hosts and guests) and ensures secure authentication and authorization.
+
+### Property Management
+Enables hosts to do CRUD for property listings. Properties include details like location, description, price per night, and available amenities.
+
+### Booking System
+Allows guests to book available properties for specific dates. It manages availability, prevents double-booking, and calculates the total booking price. Also does booking recommendations.
+
+### Review System
+Lets guests leave ratings and comments on properties they’ve stayed at. Reviews help future guests make informed decisions and maintain platform quality.
+
+### Payment Integration
+Manages secure payment processing for bookings. Tracks payment statuses to ensure hosts get paid and bookings are confirmed only after successful transactions.
+
+### API Security
+Implements authentication, authorization, rate-limiting and data validation measures. Protects user data, prevents unauthorized access, and secures transactions.
+
+###  CI/CD Pipeline
+Automates the testing and deployment process using tools like Jenkins and Docker. Ensures faster development cycles and reliable production releases.
+
+
 
 ## Team Roles
 `Front-End Developer` - Ensure the user interface and user experience are aligned to customer and business goals. Links UI with backend services.
