@@ -12,5 +12,11 @@ The Airbnb Clone Project is a comprehensive, real-world application designed to 
 
 ## Project setup
 
+## Team Roles
+`Front-End Developer` - Ensure the user interface and user experience are aligned to customer and business goals. Links UI with backend services.
+`Back-End Developer` - Ensure data is received, stored & processed in line with business logic, as well as availing the data for linking with the UI in correct formats.
+`Software Architect & Product Maneger` - Designs the high-level architecture of the software and manages the implementation process as well the implementors involved. In charge of product and team management.
+
+
 ## Info
 As part of ALX Pro-Dev Backend Course.
