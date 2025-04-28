@@ -60,25 +60,25 @@ The Airbnb Clone Project is a comprehensive, real-world application designed to 
 - A Payment is linked to a Booking and records the transaction.
 
 ## Feature Breakdown
-### User Management
+### 1. User Management
 Handles user registration, login, and profile management. Supports different user roles (hosts and guests) and ensures secure authentication and authorization.
 
-### Property Management
+### 1. Property Management
 Enables hosts to do CRUD for property listings. Properties include details like location, description, price per night, and available amenities.
 
-### Booking System
+### 1. Booking System
 Allows guests to book available properties for specific dates. It manages availability, prevents double-booking, and calculates the total booking price. Also does booking recommendations.
 
-### Review System
+### 1. Review System
 Lets guests leave ratings and comments on properties they’ve stayed at. Reviews help future guests make informed decisions and maintain platform quality.
 
-### Payment Integration
+### 1. Payment Integration
 Manages secure payment processing for bookings. Tracks payment statuses to ensure hosts get paid and bookings are confirmed only after successful transactions.
 
-### API Security
+### 1. API Security
 Implements authentication, authorization, rate-limiting and data validation measures. Protects user data, prevents unauthorized access, and secures transactions.
 
-###  CI/CD Pipeline
+### 1. CI/CD Pipeline
 Automates the testing and deployment process using tools like Jenkins and Docker. Ensures faster development cycles and reliable production releases.
 
 ##  API Security
@@ -88,7 +88,7 @@ Protecting the API endpoints from unauthorized access, abuse and overuse. This c
 #### Registration & Token Authentication
 API Registration will be integrated for anyone seeking access to the API. Tokens will allow us to manage access using features like token issuance, token expiry and revoking tokens. This will ensure only identified users get access to the system.
 
-### Authorization
+#### Authorization
 Using the API registration, user types (type: api_user) will be checked to ensure only the authorized user gets access to the API.
 
 ## Rate limiting
